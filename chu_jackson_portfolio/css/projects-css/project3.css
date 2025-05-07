@@ -1,0 +1,64 @@
+/* project1.css */
+
+.page-header {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-family: "Inconsolata", monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    color: turquoise;
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.image-gallery img {
+    width: 100%;
+    max-width: 1000px; 
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #00ffdd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    background-color: turquoise;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999; 
+}
+
+#backToTop:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

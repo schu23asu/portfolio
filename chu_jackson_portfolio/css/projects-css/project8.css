@@ -1,0 +1,67 @@
+.page-header {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-family: "Inconsolata", monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    color: turquoise;
+}
+
+.page-header p {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.2rem;
+    color: rgb(200, 200, 200);
+    margin-top: 1rem;
+    padding: 0 10%;
+    line-height: 1.5rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #00ffdd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    background-color: turquoise;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999; 
+}
+
+#backToTop:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

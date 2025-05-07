@@ -1,0 +1,86 @@
+.portfolio-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem; 
+
+}
+
+/* Force the gallery to grow and take up available vertical space */
+.portfolio-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    gap: 4rem;
+    padding: 4rem;
+    box-sizing: border-box;
+}
+
+/* Portfolio project card */
+.portfolio-project {
+    border: solid 2px teal;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+/* Expand slightly on hover */
+.portfolio-project:hover {
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+/* Image inside each portfolio project */
+.portfolio-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Slight zoom effect on hover */
+.portfolio-project:hover img {
+    transform: scale(1.05);
+}
+
+/* Project link */
+.portfolio-project-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+/* Overlay effect */
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-project:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Title inside the overlay */
+.portfolio-project-title {
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+}

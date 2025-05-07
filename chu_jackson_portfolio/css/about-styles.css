@@ -1,0 +1,92 @@
+main {
+    flex-grow: 1;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 10rem 4rem 6rem; 
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    font-family: "Inconsolata", monospace;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+    padding-top: 1rem;
+    color: rgb(63, 198, 185);
+}
+
+.about-intro {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 3.5rem;
+    line-height: 1.5;
+}
+
+.schools {
+    font-size: 1rem;
+    color: rgb(63, 198, 185);
+}
+
+.school {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.school-left {
+    max-width: 75%;
+}
+
+.school-left strong {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.school-left p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgb(200, 200, 200);
+    font-weight: 400;
+}
+
+.school-right {
+    white-space: nowrap;
+    font-family: "Inconsolata", monospace;
+    font-size: 0.95rem;
+    padding-left: 1rem;
+}
+
+.about-right {
+    flex: 1;
+    max-width: 400px;
+    padding-top: 6rem;
+}
+
+.about-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: solid 1px teal;
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inconsolata:wght@200..900&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #111;
+    /* background-color: white; */
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+.sidebar {
+    width: 15%;
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+    /* background-color: white; */
+}
+
+.logo {
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+#logoClick {
+    cursor: pointer;
+}
+
+#footerLogoClick {
+    cursor: pointer;
+}
+
+.nav {
+    margin-top: 60%;
+}
+
+.nav a {
+    display: block;
+    margin: 2rem 0;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: turquoise;
+    font-size: 30px;
+    font-family: "Inconsolata", monospace;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.nav a:hover {
+    color: rgb(160, 160, 160);
+}
+
+.nav a.active {
+    color: rgb(255, 93, 93);
+}
+
+.content-area {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.welcome-message {
+    position: absolute;
+    text-transform: uppercase;
+    top: 20%; /* Adjust up/down */
+    left: 15%; 
+    width: 30%; /* restrict width */
+    z-index: 0;
+    font-size: 3rem;
+    font-family: "Inconsolata", monospace;
+    color: #00c7bd;
+    text-align: left;
+}
+
+#welcomeMessage {
+    font-weight: 300;
+}
+
+.gallery {
+    display: flex;
+    justify-content: flex-end; /* Align projects to the right */
+    align-items: stretch;
+    height: 90%;
+    padding: 3% 5%; 
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+.project {
+    outline: 3px solid teal;     
+    position: relative;
+    width: 200px;
+    height: 100%;
+    transition: width 0.5s ease;
+    overflow: hidden;
+}
+
+.project:hover {
+    width: 60vw;
+    z-index: 2;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.project-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;              
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project-title {
+    font-family: "Inconsolata", monospace;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: rgb(200, 200, 200);
+}
+
+.footer img {
+    width: 4%;
+    height: auto;
+}

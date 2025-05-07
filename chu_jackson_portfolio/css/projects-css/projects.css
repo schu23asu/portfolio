@@ -1,0 +1,121 @@
+/* project1.css */
+
+.page-header {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-family: "Inconsolata", monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    color: turquoise;
+}
+
+.top-image {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.top-image img {
+    width: 100%;
+    max-width: 1230px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain; 
+    box-shadow: 0 4px 12px rgba(23, 247, 229, 0.2); 
+}
+
+/* Staggered Section Layout */
+.staggered-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 3rem 10%;
+    position: relative;
+}
+
+.section-block {
+    background-color: #bababa;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 60%;
+    position: relative;
+}
+
+.section-block.left {
+    align-self: flex-start;
+}
+
+.section-block.right {
+    align-self: flex-end;
+}
+
+.section-block h2 {
+    font-family: "Inconsolata", monospace;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.section-block p {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.1rem;
+    color: #464646;
+    line-height: 1.6rem;
+}
+
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2rem; /* adjust spacing between images */
+    padding: 2rem 6rem 6rem 6rem;
+}
+
+
+.image-gallery img {
+    width: 100%; /* full width of the column */
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover;
+    border: 2px solid #00ffdd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Make the first and last image span across both columns */
+.image-gallery img:first-child,
+.image-gallery img:last-child {
+    grid-column: span 2; /* Makes these images span across both columns */
+}
+
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    background-color: turquoise;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999; 
+}
+
+#backToTop:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

@@ -1,0 +1,94 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.contact-form * {
+    box-sizing: border-box;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #111;
+    padding: 6rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+    font-family: "Inconsolata", monospace;
+}
+
+.contact-form h2 {
+    color: turquoise;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: -20px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 2.5rem;
+}
+
+.contact-form label {
+    margin-bottom: 0.75rem;
+    color: #dddddd;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.contact-form textarea {
+    resize: none; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #333;
+    border-radius: 0.6rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1.15rem;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: turquoise;
+    box-shadow: 0 0 7px rgba(64, 224, 208, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #00b3b3;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: turquoise;
+}
+
+.contact-form ::placeholder {
+    color: #888;
+    font-size: 1.05rem;
+}
+
+.error-message {
+    display: none; 
+    font-size: 0.9rem;
+    margin-top: 1%;
+    color: red;
+}

@@ -1,0 +1,58 @@
+/* project1.css */
+.top-image2 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.top-image2 img {
+    max-width: 400px;
+    border-radius: 12px;
+    object-fit: contain; 
+    box-shadow: 0 4px 12px rgba(23, 247, 229, 0.2); 
+}
+
+
+.page-header {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-family: "Inconsolata", monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    color: turquoise;
+}
+
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.image-gallery img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #00ffdd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
